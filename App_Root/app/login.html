@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>TiNotifications</title>
+
+        <meta name="description" content="Thapar Universitys official event notice platform"/>
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Chrome for Android theme color -->
+        <meta name="theme-color" content="#3498db">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="TiNotifications">
+        <link rel="icon" sizes="192x192" href="images/profile/logo.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="TiNotifications">
+        <link rel="apple-touch-icon" href="images/profile/logo.png">
+
+        <!-- Tile for Win8 -->
+        <meta name="msapplication-TileColor" content="#3498db">
+        <meta name="msapplication-TileImage" content="images/profile/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script>
+            const userAgent = window.navigator.userAgent.toLowerCase();
+           if (/windows/.test( userAgent )){
+            alert("Device not compatible, use Android or iOS devices");
+            window.location = "/oops.html";
+           }
+        (function(){
+            fetch('/users/chkuser',{
+               method:'post'
+            }).then(function(resp){
+                return resp.text();
+            }).then(function(r){
+                if(r=='y'){
+                    window.location="./main.html";
+                }else{
+
+                }
+            }).catch(function(err){
+                console.error(err);
+            });
+        })();
+
+          function vis(){
+            var x = document.getElementById("logpwd");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById("vis").src="img/close-eye.png";
+                x.style.marginTop="-2px";
+            } else {
+                x.type = "password";
+                document.getElementById("vis").src="img/open-eye.png";
+            }
+          }
+
+          function redirec(ul){
+            document.getElementById("check").style.display="block";
+            document.getElementById("check-back").style.display="block";
+            window.location = ul;
+          }
+
+          function fgpwd(){
+            document.getElementById("pwdc").style.display="block";
+            document.getElementById("check-back2").style.display="block";
+          }
+
+          function forgpwd(){           
+            if(document.getElementById('forgemail').value == ""){
+                alert("Enter a valid email");
+                return;
+            }
+            document.getElementById("check").style.zIndex="200";
+            document.getElementById("check-back").style.zIndex="200";
+            document.getElementById("check").style.display="block";
+            document.getElementById("check-back").style.display="block";
+            var data={
+                email : document.getElementById('forgemail').value
+            };
+            const headers = new Headers({'Content-Type': 'application/json'});
+            const body = JSON.stringify(data);
+            fetch('/users/forgemail', {
+            method: 'POST',
+            headers: headers,
+            body:body
+            }).then(function(resp){
+                return resp.text();
+            }).then(function(j){
+                if(j == "ok"){
+                    document.getElementById("pwdc").style.display="none";
+                    document.getElementById("check-back2").style.display="none";
+                    document.getElementById("check-back").style.display="none";
+                    document.getElementById("check").style.display="none";
+                    document.getElementById("check").style.zIndex="100";
+                    document.getElementById("check-back").style.zIndex="100";                    
+                    alert("Temporary password has been sent to "+data.email+", do check the SPAM folder!");
+                }else{
+                    document.getElementById("pwdc").style.display="none";
+                    document.getElementById("check-back2").style.display="none";
+                    document.getElementById("check-back").style.display="none";
+                    document.getElementById("check").style.display="none";
+                    document.getElementById("check").style.zIndex="100";
+                    document.getElementById("check-back").style.zIndex="100";                    
+                    alert("We had some problem getting to that address right now, sorry!");                    
+                }
+            }).catch(function(err){
+                console.error("Default pwd sending failed:"+err);
+            });
+          }          
+
+          function rend(){
+            document.getElementById("pwdc").style.display="none";
+            document.getElementById("check-back2").style.display="none";
+            document.getElementById("check-back").style.display="none";
+            document.getElementById("check").style.display="none";
+            document.getElementById("check").style.zIndex="100";
+            document.getElementById("check-back").style.zIndex="100"; 
+          }
+
+        </script>        
+    </head>
+    <body>
+        <div id="login-box">
+          <div class="left">
+            <h1>Log in</h1>
+            <p class="unit">with <b>thapar.edu</b></p>
+            <input type="text" name="email" placeholder="E-mail" id="logemail"/>
+            <img id="vis" src="img/open-eye.png" onclick="vis()">
+            <input type="password" name="password" placeholder="Password" id="logpwd"/>
+            <div  id="msg-email">*Email password pair incorrect</div>
+            <div id="submit" onclick="lgin()">LOGIN</div>
+          </div>
+        </div>
+        <div class="band1"><h2><a onclick="fgpwd()">Forgot Password</a></h2></div>
+        <div class="band"><h2>Not a member yet? <a onclick="redirec('./signup.html')">SIGNUP</a></h2></div>
+        <a href="https://github.com/llStringll" target="_blank"><div id="me"><hr>Created by <i>Harshveer</i> for Thapar University</div></a>
+        <div id="check-back"></div>
+        <div id="check-back2" onclick="rend()"></div>
+        <div id="check"><div class="loading"></div></div>
+        <div id="pwdc">
+            Enter registered email
+            <input type="text" name="forgemail" placeholder="E-mail" id="forgemail"/>
+            <div id="submit1" onclick="forgpwd()">NEXT</div>
+        </div>
+    <script src="js/main.js"></script>
+    </body>
+    <script src="js/swf.js"></script>
+</html>

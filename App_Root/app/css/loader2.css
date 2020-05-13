@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+body {
+  background: #1b1b1b;
+  font-family: 'Raleway', sans-serif;
+}
+
+#app-name{
+  color:white;
+  position:absolute;
+  top:20px;
+  left:20px;
+  font-size:5.5vw;
+  font-weight:500;
+}
+
+#say{
+  color:white;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  font-size:5.5vw;
+  font-weight:500;
+}
+
+
+
+#nocon{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10;
+  background-color: white;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+#nocon #banner{
+  position:absolute;
+  width:100%;
+  color:#425066;
+  font-size:7vw;
+  font-weight:700;
+  letter-spacing:0.1px;
+  padding:15px 0 15px 0;
+  margin-top:0px;
+  background-color:white;
+}
+
+#nocon img#tulogo{
+  width:45px;
+  height:40px;
+  position:absolute;
+  top:0;
+  right:0;
+  margin-top:15px;
+  margin-right:10px;
+  z-index:10;
+}
+#nocon #cont{
+  width:100%;
+  height:10%;
+  background-color:#3498db;
+  color:white;
+  text-align:center;
+  padding:30% 0 20% 0;
+  font-size:4vw;
+  font-weight:500;
+}
+#nocon #statuscode{
+  font-size:8vw;
+  font-weight:700;
+  display:block;
+  margin-bottom:5vw;
+}
+#nocon #me{
+  margin-top:20px;
+  position:absolute;
+  width:100%;
+  color:#425066;
+  font-size:4vw;
+  font-weight:400;
+  letter-spacing:0.1px;
+  text-align:center;
+  z-index:5;
+}
+#nocon hr{
+  margin-top:20%;
+}
+
+
+
+
+
+
+
+#back{
+  top:0;
+  left:0;
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:0.1;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -40px 0 0 -40px;    
+  border: 10px solid #121212; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,512 @@
+[
+  {
+    "NAMES":"Chemical Engineering Department",
+    "CODES":"CHED",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Civil Engineering Department",
+    "CODES":"CED",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Computer Science and Engineering Department",
+    "CODES":"CSED",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Department of Biotechnology",
+    "CODES":"DOB",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Electronics and Instrumentation Engineering Department",
+    "CODES":"EICD",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Electronics and Communication Engineering Department",
+    "CODES":"ECED",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Mechanical Engineering Department",
+    "CODES":"MED",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"School of Chemistry and Biochemistry",
+    "CODES":"SOCB",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"School of Energy and Environment",
+    "CODES":"SOEE",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"School of Humanities and Social Sciences",
+    "CODES":"SOHSS",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"School of Mathematics",
+    "CODES":"SOM",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"School of Physics and Material Sciences",
+    "CODES":"SOPMS",
+    "WEBSITES":"",
+    "BIO":""
+  },            
+  {
+    "NAMES":"HOSTEL A",
+    "CODES":"HOSTELA",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL B",
+    "CODES":"HOSTELB",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL C",
+    "CODES":"HOSTELC",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL H",
+    "CODES":"HOSTELH",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL J",
+    "CODES":"HOSTELJ",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL K",
+    "CODES":"HOSTELK",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL L",
+    "CODES":"HOSTELL",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL M",
+    "CODES":"HOSTELM",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL E",
+    "CODES":"HOSTELE",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL G",
+    "CODES":"HOSTELG",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL I",
+    "CODES":"HOSTELI",
+    "WEBSITES":"",
+    "BIO":""
+  },    
+  {
+    "NAMES":"HOSTEL N",
+    "CODES":"HOSTELN",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"HOSTEL PG",
+    "CODES":"HOSTELPG",
+    "WEBSITES":"",
+    "BIO":""
+  },
+  {
+    "NAMES":"Center for Training and Development",
+      "CODES":"CTD",
+      "WEBSITES":"",
+      "BIO":""
+  },
+  {
+    "NAMES":"Center for Industrial Liasion and Placement",
+      "CODES":"CILP",
+      "WEBSITES":"",
+      "BIO":""
+  },
+  {
+  	"NAMES":"Dean of Academic Affairs",
+  		"CODES":"DOAA",
+  		"WEBSITES":"",
+  		"BIO":""
+  },	
+  {
+  	"NAMES":"Dean of Student Affairs",
+  		"CODES":"DOSA",
+  		"WEBSITES":"",
+  		"BIO":""
+  },
+  {
+    "NAMES":"Dean of Partnerships & Accreditation",
+      "CODES":"DORPG",
+      "WEBSITES":"",
+      "BIO":""
+  },  
+  {
+    "NAMES":"Dean of Research and Sponsered Projects",
+      "CODES":"DORSP",
+      "WEBSITES":"",
+      "BIO":""
+  },
+  {
+    "NAMES":"Library",
+      "CODES":"LIBRARY",
+      "WEBSITES":"",
+      "BIO":""
+  },  
+  {
+  	"NAMES": "Thapar Mathematical Society",
+		"CODES": "TMS",
+		"WEBSITES": "",
+		"BIO": "To promote mathematics and its applications among the young people and in society"
+  },
+  {
+  	"NAMES": "Entrepreneurship Development Cell",
+		"CODES": "EDC",
+		"WEBSITES": "http://www.edctiet.com",
+		"BIO": "Committed to build a strong platform for budding entrepreneurs as a career, as a path to success, as a journey of wisdom"
+  },
+  {
+  	"NAMES": "Student Alumni Interaction Cell",
+		"CODES": "SAIC",
+		"WEBSITES": "",
+		"BIO": "Helps in Co-ordinating with Alumni Association for Organising Alumni Reunions; Global Leadership Summit and for conducting Invited Talks"
+  },
+  {
+  	"NAMES": "AICHE Student Chapter",
+		"CODES": "AICHE",
+		"WEBSITES": "http://tietpatiala.wixsite.com/aiche",
+		"BIO": "The world's leading organization for Chemical Engineering professionals, with more than 50,000 members from over 100 countries"
+  },
+  {
+  	"NAMES": "Creative Computing Society",
+		"CODES": "CCS",
+		"WEBSITES": "http://ccstiet.com",
+		"BIO": "To encourage students to develop an analytical temperament in the field of technology and innovation. The society conducts workshops and coding competitions on a regular basis, thus acting as a platform for students to showcase and nurture their technical skill to discover their best lying potential"
+  },
+  {
+  	"NAMES": "Economics Club",
+		"CODES": "ECON",
+		"WEBSITES": "http://econclub.in",
+		"BIO": "A forum to identify and discuss economic, social and political issue"
+  },
+  {
+  	"NAMES": "ENACTUS",
+		"CODES": "ENACTUS",
+		"WEBSITES": "http://sites.google.com/view/enactus-thapar",
+		"BIO": "A community of students, academic and business leaders committed to using entrepreneurial action to transform lives and shape a better world"
+  },
+  {
+  	"NAMES": "Frosh Week",
+		"CODES": "FROSH",
+		"WEBSITES": "froshtiet.com",
+		"BIO": "Welcomes the first year students in TIET"
+  },
+  {
+  	"NAMES": "GENE",
+		"CODES": "GENE",
+		"WEBSITES": "http://genesocietytiet.wixsite.com/website",
+		"BIO": "Aims at providing professional excellence to students in organizing technical events like seminars, workshops, guest lectures, panel discussions"
+  },
+  {
+  	"NAMES": "Indian Society of Technical Education",
+		"CODES": "ISTE",
+		"WEBSITES": "http://sites.google.com/view/iste-thapar/home",
+		"BIO": "Providing guidance and training to students to develop better technical, learning skills and personality, Organise lectures by experts from industry, R&D organisations, defence services"
+  },
+  {
+  	"NAMES": "Institution of Engineers Student Chapter",
+		"CODES": "IEI",
+		"WEBSITES": "ieithapar.com",
+		"BIO": "Organises various workshops, technical exams, lecture series by people successful in their fields"
+  },
+  {
+  	"NAMES": "International Association of Students in Economics & Business Management",
+		"CODES": "AIESEC",
+		"WEBSITES": "www.aiesec.in",
+		"BIO": "An international youth run not for profit organization to encorporate leadership skills"
+  },
+  {
+  	"NAMES": "Kalam Society",
+		"CODES": "KALAM",
+		"WEBSITES": "http://harhathkalam.org/",
+		"BIO": "Aim to provide education to underprivileged children, who are living in slums or roads and are begging on the streets"
+  },
+  {
+  	"NAMES": "LEAD Society",
+		"CODES": "LEAD",
+		"WEBSITES": "http://www.leadsociety.in/",
+		"BIO": "Provides platform to students of all disciplines to organize industrial visits, lectures and workshops"
+  },
+  {
+  	"NAMES": "Microsoft Student Chapter",
+		"CODES": "MSC",
+		"WEBSITES": "www.msctiet.co.in",
+		"BIO": "To provide guidance, technical trainings, project guidance that improve students knowledge and learning skills"
+  },
+  {
+  	"NAMES": "OWASP Student Chapter",
+		"CODES": "OWASP",
+		"WEBSITES": "owasp.tk",
+		"BIO": "To provide excellence in the field of network and security and encourage members to be more digitally secure"
+  },
+  {
+  	"NAMES": "Paryavaran Welfare Society",
+		"CODES": "PWS",
+		"WEBSITES": "www.paryavaran.ws",
+		"BIO": "To maintain the biodiversity, conservation of water, air and energy resources"
+  },
+  {
+  	"NAMES": "Pratigya Society",
+		"CODES": "PS",
+		"WEBSITES": "http://www.pratigya007.wordpress.com/",
+		"BIO": "An NGO working for educational welfare of society"
+  },
+  {
+  	"NAMES": "ROTARACT Club-Student Chapter",
+		"CODES": "ROTARACT",
+		"WEBSITES": "http://rohitmohanty.github.io/Rotaract_Thapar",
+		"BIO": "To tackle communities most persistent problems, like check-ups and awareness camps"
+  },
+  {
+  	"NAMES": "Society of Mechanical and Industrial Engineers",
+		"CODES": "SOMIE",
+		"WEBSITES": "http://sites.google.com/thapar.edu/somie",
+		"BIO": "To help students gain technical and practical knowledge in the field of mechanical engineering"
+  },
+  {
+  	"NAMES": "Thapar Amateur Astronomers Society",
+		"CODES": "TAAS",
+		"WEBSITES": "http://mytaas.wordpress.com",
+		"BIO": "To explore the cosmos with science and engineering"
+  },
+  {
+  	"NAMES": "Thapar Society of Civil Engineers",
+		"CODES": "TSCE",
+		"WEBSITES": "http://tscethapar.wordpress.com/",
+		"BIO": "Aim of providing a platform to all the budding civil engineers to update their skills in civil engineering design and field work"
+  },
+  {
+  	"NAMES": "Thapar University Model United Nations",
+		"CODES": "TUMUN",
+		"WEBSITES": "www.thaparmun.com",
+		"BIO": "For all those who want to master the art of negotiation"
+  },
+  {
+  	"NAMES": "TU Toastmasters Club",
+		"CODES": "TOMC",
+		"WEBSITES": "http://toastmastersthapar.wordpress.com/",
+		"BIO": "Helps its members to improve their public speaking, communication and leadership skills"
+  },
+  {
+  	"NAMES": "Adventure Club",
+		"CODES": "ADVENT",
+		"WEBSITES": "",
+		"BIO": "The forum for adventure enthusiasts, trekkers, climbers and armchair mountaineers in the student community"
+  },
+  {
+  	"NAMES": "Institution of Electronics and Telecommunication Engineers",
+		"CODES": "IETE",
+		"WEBSITES": "http://www.ietetu.club",
+		"BIO": "To organise technical events which involves electronics, telecommunication, and IT as a core area"
+  },
+  {
+  	"NAMES": "Literary Society",
+		"CODES": "LITSOC",
+		"WEBSITES": "http://litsoc-tiet.com/",
+		"BIO": "To inculcate among students a keen sense of language and appreciation for myriad literary expressions, forms and genres"
+  },
+  {
+  	"NAMES": "SPADES",
+		"CODES": "SPADES",
+		"WEBSITES": "http://sportstiet.tk",
+		"BIO": "Encourages students to participate in sports, maintain their fitness and to bring out the sportsman in each individual"
+  },
+  {
+  	"NAMES": "Youth Welfare Club",
+		"CODES": "YWC",
+		"WEBSITES": "http://sites.google.com/view/youthwelfareclub/home",
+		"BIO": "To develop students’ personality through their exposure to the outdoor and welfare activities like: Yoga; Talent-Hunt; public speaking, etc"
+  },
+  {
+  	"NAMES": "ACM Computing Chapter",
+		"CODES": "ACM",
+		"WEBSITES": "",
+		"BIO": "To provide a platform for serving as a professional network, encouraging students to take active interest in organization of high quality ACM workshops"
+  },
+  {
+  	"NAMES": "American Society of Heating Refrigeration and Air-Conditioning Engineers",
+		"CODES": "ASHRAE",
+		"WEBSITES": "",
+		"BIO": "International technical society and well known in the area of Heating, Refrigeration and Air Conditioning"
+  },
+  {
+  	"NAMES": "Chemist's Association for Research and Education",
+		"CODES": "CARE",
+		"WEBSITES": "",
+		"BIO": "To promote the chemical research and education for the benefit of the society. To encourage the young students for joining the science stream as a career option"
+  },
+  {
+  	"NAMES": "NOX",
+		"CODES": "NOX",
+		"WEBSITES": "",
+		"BIO": "The students showcase their dancing talents at the various events in the college and also represent the institute in various competitions"
+  },
+  {
+  	"NAMES": "Fine Arts and Photography Society",
+		"CODES": "FAPS",
+		"WEBSITES": "http://fapstiet.wordpress.com/",
+		"BIO": "A vibrant society having a tradition of mentoring the youngsters through workshops on Sketching, Painting, Photography, Calligraphy and Photoshop"
+  },
+  {
+  	"NAMES": "Indian Institute of Chemical Engineers",
+		"CODES": "IICHE",
+		"WEBSITES": "",
+		"BIO": "A student chapter of Indian Institute of Chemical Engineers at TIET campus"
+  },
+  {
+    "NAMES": "Thapar Food Fest",
+    "CODES": "TFF",
+    "WEBSITES": "",
+    "BIO": "We strive to bring together the best food providers from all over world under one roof for food lovers to indulge in their specialties!"
+  },  
+  {
+  	"NAMES": "Institution of Engineering and Technology",
+		"CODES": "IET",
+		"WEBSITES": "http://ietstudentchapter1.wixsite.com/thapar",
+		"BIO": "Aims at supporting the students to explore their professional and intellectural abilities, to develop their skills, increasing their competence"
+  },
+  {
+  	"NAMES": "Materials and Physics Society",
+		"CODES": "MAPS",
+		"WEBSITES": "",
+		"BIO": "Promotes knowledge about Material Sciences and aims at building basics in the field of Physics"
+  },
+  {
+  	"NAMES": "Mechatronics and Robotics Society",
+		"CODES": "MARS",
+		"WEBSITES": "",
+		"BIO": "Conducts different workshops (on Lego Kits, ROS, Arduino Uno, Raspberry Pi kits), competitions, technical quizzes and expert lectures"
+  },
+  {
+  	"NAMES": "Music and Drama Society",
+		"CODES": "MUDRA",
+		"WEBSITES": "",
+		"BIO": "To hone the extra-curricular skills of students in the area of Music, Dramatics and developing managerial prowess"
+  },
+  {
+  	"NAMES": 	"National Service Scheme - 15units",
+		"CODES": "NSS",
+		"WEBSITES": "",
+		"BIO": "Organizes activities for the welfare of society and celebrates the days of national importance"
+  },
+  {
+  	"NAMES": "Society for Promotion of Indian Classical Music and Culture Amongst Youth",
+		"CODES": "SPICMACAY",
+		"WEBSITES": "",
+		"BIO": "A non-political nationwide voluntary movement that organises programmes of classical music and dance, folk arts, crafts, yog, classic cinema screenings, heritage walks"
+  },
+  {
+  	"NAMES": "Society of Automotive Engineers",
+		"CODES": "SAE",
+		"WEBSITES": "",
+		"BIO": "To create awareness among the students about new technologies in the automotive industry "
+  },
+  {
+  	"NAMES": "Virsa SSA",
+		"CODES": "VIRSASSA",
+		"WEBSITES": "http://sites.google.com/views/ssa-thapar",
+		"BIO": "To impart knowledge and inculcate a way of life which strikes a perfect balance between spiritual peace and rational work ethics"
+  },
+  {
+  	"NAMES": "Student Consultive Committee",
+		"CODES": "SCC",
+		"WEBSITES": "",
+		"BIO": "To assist the administration in preparing and implementing students' welfare plans, meetups twice a semester"
+  },
+  {
+  	"NAMES": "TEDx",
+		"CODES": "TEDX",
+		"WEBSITES": "",
+		"BIO": "Aims at bringing the best of orators and speakers to the university platform under the TED initiative"
+  },
+  {
+  	"NAMES": "Thapar Codechef Chapter",
+		"CODES": "TUCODERS",
+		"WEBSITES": "",
+		"BIO": "Aims at promoting and encouraging students into competitive programming and help prepare themselves for various global level competitions"
+  },
+  {
+  	"NAMES": "Thapar Movie Club",
+		"CODES": "TMC",
+		"WEBSITES": "",
+		"BIO": "To promote movie making on the academic, social and cultural subjects that impact the society"
+  },
+  {
+  	"NAMES": "Visual Bulletin",
+		"CODES": "VB",
+		"WEBSITES": "http://sites.google.com/Thapar.edu/Visualbulletin",
+		"BIO": "Providing the students with knowledge and technical skills about the various technologies and softwares used in modern visual communication"
+  },
+  {
+  	"NAMES": "Yatharth",
+		"CODES": "YATHARTH",
+		"WEBSITES": "http://ygpalta.wixsite.com/yupatiala",
+		"BIO": "Aims at encouraging the students to work on inter-disciplinary design and research projects"
+  },
+  {
+  	"NAMES": "Youth United - Thapar Chapter",
+		"CODES": "YUTC",
+		"WEBSITES": "",
+		"BIO": "To encourage development of society as a whole through its activities like publishing periodicals on social issues, organize community service events & visits"
+  },
+  {
+    "NAMES": "Linux Users Group",
+    "CODES": "LUG",
+    "WEBSITES": "",
+    "BIO": "Aims at spreding in-depth knowledge about strong and base-building computing concepts"
+  },
+  {
+    "NAMES": "Games and Sports",
+    "CODES": "GAAS",
+    "WEBSITES": "",
+    "BIO": "Conducts major sports events in the campus"
+  }    
+]

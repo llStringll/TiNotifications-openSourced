@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>TiNotifications</title>
+
+        <meta name="description" content="Thapar Universitys official event notice platform"/>
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Chrome for Android theme color -->
+        <meta name="theme-color" content="#3498db">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="TiNotifications">
+        <link rel="icon" sizes="192x192" href="images/profile/logo.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="TiNotifications">
+        <link rel="apple-touch-icon" href="images/profile/logo.png">
+
+        <!-- Tile for Win8 -->
+        <meta name="msapplication-TileColor" content="#3498db">
+        <meta name="msapplication-TileImage" content="images/profile/logo.png">
+
+        <link rel="stylesheet" type="text/css" href="css/openas.css">
+        <script> 
+            const userAgent = window.navigator.userAgent.toLowerCase();
+           if (/windows/.test( userAgent )){
+            alert("Device not compatible, use Android or iOS devices");
+            window.location = "/oops.html";
+           }
+            
+               (function(){
+            fetch('/users/chkuser',{
+                    method:'post'
+            }).then(function(resp){
+                return resp.text();
+            }).then(function(r){
+                if(r=='y'){
+                    window.location="./main.html";
+                }else{
+
+                }
+            }).catch(function(err){
+                console.error(err);
+            });
+        })();</script>
+    </head>
+    <body>
+        <div id="back"></div>
+        <div id="banner"><span style=" padding-left: 10px;">TiNotifications</span></div>
+        <img id="tulogo" src="/images/touch/images/noim.png">
+        <div id="accessbar">
+            <span id="sgnbtn" onclick="sgn()">SIGN UP</span>
+            <span id="lgnbtn" onclick="lgn()">LOG IN</span>        
+        </div>
+        <!-- <div id="down">
+            From the office of Higher authorities<br><br>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Dean of Academic Affairs</h3>
+                <p id="socinfo">Notices from DoAA office</p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Dean of Student Affairs</h3>
+                <p id="socinfo">Notices from DoSA office</p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Dean of Partnerships & Accreditation</h3>
+                <p id="socinfo">Notices from DoRPG office</p>
+            </div>                        
+            <div onclick="prompt()" class="card-soc">
+                <h3>Dean of Research and Sponsered Proects</h3>
+                <p id="socinfo">Notices from DoRSP office</p>
+            </div>            
+            <div onclick="prompt()" class="card-soc">
+                <h3>Center for Industrial Liasion and Placement</h3>
+                <p id="socinfo">Notices from CILP</p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Center for Training and Development</h3>
+                <p id="socinfo">Notices from CTD</p>
+            </div>            
+            <div onclick="prompt()" class="card-soc">
+                <h3>Library</h3>
+                <p id="socinfo">Newsletters from library</p>
+            </div>
+
+
+            <hr/>
+            Departments<br><br>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Chemical Engineering</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Civil Engineering</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Computer Science and Engineering</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Department of Biotechnology</h3>
+                <p id="socinfo"></p>
+            </div>                        
+            <div onclick="prompt()" class="card-soc">
+                <h3>Electrical and Instrumentation Engineering</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Electrical and Communication Engineering</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>Mechanical Engineering Department</h3>
+                <p id="socinfo"></p>
+            </div>
+
+
+            <hr/>
+            Schools<br><br>
+            <div onclick="prompt()" class="card-soc">
+                <h3>School of Chemistry and Biochemistry</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>School of Energy and Environment</h3>
+                <p id="socinfo"></p>
+            </div>                        
+            <div onclick="prompt()" class="card-soc">
+                <h3>School of Humanities and Social Sciences</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>School of Mathematics</h3>
+                <p id="socinfo"></p>
+            </div>
+            <div onclick="prompt()" class="card-soc">
+                <h3>School of Physics and Material Sciences</h3>
+                <p id="socinfo"></p>
+            </div>
+
+
+
+            <hr/>
+            Get access to more than 50 societies<br><br>
+        </div> -->
+        <div id="check-back"></div>
+        <div id="check"><div class="loading"></div></div>        
+    <script>
+        function sgn(){    
+            document.getElementById("check").style.display="block";
+            document.getElementById("check-back").style.display="block";
+            window.location = './signup.html';
+        }
+        function lgn(){
+            document.getElementById("check").style.display="block";
+            document.getElementById("check-back").style.display="block";            
+            window.location = './login.html';
+        }
+        history.replaceState(null, document.title, location.pathname+"#!/easteregg");
+        history.pushState(null, document.title, location.pathname);
+
+        window.addEventListener("popstate", function() {
+          if(location.hash === "#!/easteregg") {
+            history.replaceState(null, document.title, location.pathname);
+            setTimeout(function(){
+              location.replace("./log_sig.html");
+            },0);
+          }
+        }, false);
+
+        // (function(){
+        //     fetch('/users/getsoc',{
+                // method:'POST'
+        //     }).then(function(resp){
+        //         return resp.text();
+        //     }).then(function(j){
+        //         let obj = JSON.parse(j);
+        //         for(let i=0;i<obj.length;i++){
+        //             for(let j=0;j<obj.length-1;j++){
+        //                 if(obj[j]["NAMES"] > obj[j+1]["NAMES"]){
+        //                     let t = obj[j+1];
+        //                     obj[j+1] = obj[j];
+        //                     obj[j] = t;
+        //                 }
+        //             }
+        //         }                
+        //         for(let i=0;i<obj.length;i++){
+        //             if (obj[i]['NAMES'].includes("Dean") ||  obj[i]['CODES']=="DOSA" || obj[i]['CODES']=="DOAA" || obj[i]['CODES']=="DORSP" || obj[i]['CODES']=="LIBRARY" || obj[i]['CODES']=="CILP" || obj[i]['CODES']=="CTD" || obj[i]['CODES'].includes("HOSTEL") || obj[i]['NAMES'].includes("School") || obj[i]['NAMES'].includes("Department")){
+        //                 continue;
+        //             }                    
+        //             const item=
+        //                 `<div onclick="prompt()" class="card-soc">
+        //                     <h3>${obj[i]['NAMES']}</h3>
+        //                     <p id="socinfo">${obj[i]['BIO']}</p>
+        //                  </div>`;
+        //             document.getElementById('down').insertAdjacentHTML('beforeEnd', item);                
+        //         }
+        //     document.getElementById('down').insertAdjacentHTML('beforeEnd',`<hr>Hostels<br><br>
+        //     <div onclick="prompt()" class="card-soc">
+        //         <h3>Boys Hostels</h3>
+        //         <p id="socinfo">A-B-C-H-J-K-L-M</p>
+        //     </div>
+        //     <div onclick="prompt()" class="card-soc">
+        //         <h3>Girls Hostels</h3>
+        //         <p id="socinfo">E-G-I-N-PG</p>
+        //     </div>`);
+        //         document.getElementById('down').insertAdjacentHTML('beforeEnd',`<hr><a href="https://github.com/llStringll" target="_blank"><div id="me">Created by <u>Harshveer</u> for Thapar University</div></a>`);
+        //     }).catch(function(err){
+        //         console.error("Failed to get soc data:"+err);
+        //     }); 
+        // })();
+
+        // function prompt(){
+        //     alert("Join the community to access");
+        // }
+    </script>
+    </body>
+    <!-- <script src="js/swf.js"></script> -->
+</html>

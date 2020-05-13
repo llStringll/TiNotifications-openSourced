@@ -1,0 +1,64 @@
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>TiNotifications</title>
+
+        <meta name="description" content="Thapar Universitys official event notice platform"/>
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Chrome for Android theme color -->
+        <meta name="theme-color" content="#3498db">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="TiNotifications">
+        <link rel="icon" sizes="192x192" href="images/profile/logo.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="TiNotifications">
+        <link rel="apple-touch-icon" href="images/profile/logo.png">
+
+        <!-- Tile for Win8 -->
+        <meta name="msapplication-TileColor" content="#3498db">
+        <meta name="msapplication-TileImage" content="images/profile/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/loader2.css">
+        <script>
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            if (/windows/.test( userAgent )){
+                alert("Device not compatible, use Android or iOS devices");
+                window.location = "/oops.html";
+            }
+        </script>
+  </head>
+  <body>
+    <div id="back"></div>
+    <div id="app-name">TiNotifications</div>
+    <div class="loading"></div>
+    <div id="say">connecting students everyday</div>
+    <div id="nocon">
+        <div id="banner"><span style=" padding-left: 10px;">TiNotifications</span></div>
+        <img id="tulogo" src="/images/touch/images/tulogo.png">
+        <div id="cont"><span id="statuscode">OOPS</span>Seems like you're offline,<br/>we'll get your stuff back when you're online!!</div>        
+        <hr><a href="https://github.com/llStringll" target="_blank"><div id="me">Created by <u>Harshveer</u> for Thapar University</div></a>
+    </div>
+    <script>
+        window.setTimeout(function(){
+            fetch('/start',{
+                method:'post'
+            }).then(function(resp){
+                return resp.text();
+            }).then(function(t){
+                if(t.includes('main')) window.location = './main.html'
+                else window.location = './log_sig.html'
+            }).catch(function(err){
+                document.getElementById("nocon").style.display = "block";
+            });
+        }, 2000);
+    </script>
+  </body>
+  <!-- <script src="js/swf.js"></script> -->
+</html>

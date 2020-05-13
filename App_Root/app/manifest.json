@@ -1,0 +1,32 @@
+{
+  "name": "TiNotifications",
+  "short_name": "TiNotifications",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color":"white",
+  "theme_color": "#1b1b1b",
+  "icons": [
+    {
+      "src": "images/profile/icon-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/profile/icon-192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/profile/icon-256x256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/profile/icon-384x384.png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "images/profile/icon-512x512.png",
+      "sizes": "512x512"
+    }    
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "tinotifications",
+  "version": "2.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto-js": "^3.1.9-1",
+    "email-validator": "^2.0.4",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^5.5.2",
+    "ngrok": "^3.2.7",
+    "nodemailer": "^6.1.0",
+    "pulltorefreshjs": "^0.1.14",
+    "read-excel-file": "^4.0.2",
+    "web-push": "^3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "workbox-build": "^3.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node server.js 8080\" \"node server.js 8081\" \"node server.js 8082\""
+  },
+  "author": "Harshveer Singh",
+  "license": "ISC"
+}

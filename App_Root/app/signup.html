@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>TiNotifications</title>
+
+        <meta name="description" content="Thapar Universitys official event notice platform"/>
+        <!-- Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Chrome for Android theme color -->
+        <meta name="theme-color" content="#3498db">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="TiNotifications">
+        <link rel="icon" sizes="192x192" href="images/profile/logo.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="TiNotifications">
+        <link rel="apple-touch-icon" href="images/profile/logo.png">
+
+        <!-- Tile for Win8 -->
+        <meta name="msapplication-TileColor" content="#3498db">
+        <meta name="msapplication-TileImage" content="images/profile/logo.png">
+        
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+           const userAgent = window.navigator.userAgent.toLowerCase();
+           if (/windows/.test( userAgent )){
+            alert("Device not compatible, use Android or iOS devices");
+            window.location = "/oops.html";
+           }
+                    (function(){
+            fetch('/users/chkuser',{
+              method:'post'
+            }).then(function(resp){
+                return resp.text();
+            }).then(function(r){
+                if(r=='y'){
+                    window.location="./main.html";
+                }else{
+
+                }
+            }).catch(function(err){
+                console.error(err);
+            });
+        })();
+            $(document).ready(function(){
+                $('#year').change(function(){
+                    if($(this).val()!='1'){
+                        $('#regno').hide();
+                        $('#msg-regno').hide();
+                    }
+                    if($(this).val()=='1'){
+                        $('#regno').show();
+                    }                    
+                });
+            });
+          function vis(){
+            var x = document.getElementById("pwd");
+            if (x.type === "password") {
+                x.type = "text";
+                document.getElementById("vis").src="img/close-eye.png";
+            } else {
+                x.type = "password";
+                document.getElementById("vis").src="img/open-eye.png";
+            }
+          }
+          function redirec(ul){
+            document.getElementById("check").style.display="block";
+            document.getElementById("check-back").style.display="block";
+            window.location = ul;
+          }          
+        </script>
+    </head>
+    <body>
+        <div id="login-box">
+          <div class="left">
+            <h1>Sign up</h1>
+            <p class="unit">with <b>thapar.edu</b></p>
+            <span id="yr-label">Year:</span>
+            <select id="year">
+                <option value="1">1st</option>
+                <option value="2">2nd</option>
+                <option value="3">3rd</option>
+                <option value="4">4th</option>
+            </select>
+            <input type="text" name="regno" placeholder="Reg. no." id="regno"/>
+            <div  id="msg-regno">*Enter a valid thapar reg. no.</div>            
+            <input type="text" name="email" placeholder="E-mail" id="email"/>
+            <div  id="msg-email">*Enter a valid thapar.edu email</div>
+            <div id="otpgen" onclick="genotp()">CREATE OTP</div>
+            <input type="password" name="otp" placeholder="OTP" id="otp"/>
+            <div  id="msg-otp">*Enter a valid OTP</div>
+            <input type="text" name="name" placeholder="Username" id="usrname"/>
+            <div  id="msg-name">*Enter a valid username</div>            
+            <img id="vis" src="img/open-eye.png" onclick="vis()">
+            <input type="password" name="password" placeholder="Password" id="pwd"/>
+            <div  id="msg-pwd">*Enter a valid password</div> 
+            <div id="submit" onclick="signupDB()">SIGN ME UP</div>
+            <div class="band"><h2>Already a member? <a onclick="redirec('./login.html')">LOGIN</a></h2></div>
+          </div>
+        </div>
+        <a href="https://github.com/llStringll" target="_blank"><div id="me"><hr>Created by <i>Harshveer</i> for Thapar University</div></a>
+        <div id="check-back"></div>
+        <div id="check"><div class="loading"></div></div>
+    <script src="js/main.js"></script>
+    </body>
+    <script src="js/swf.js"></script>
+</html>
